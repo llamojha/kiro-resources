@@ -1,6 +1,6 @@
 # Kiro Prompt Pack
 
-A collection of 11 reusable prompts for the [Kiro CLI](https://kiro.dev/cli/).
+A collection of 12 reusable prompts for the [Kiro CLI](https://kiro.dev/cli/).
 
 ## Installation
 
@@ -39,6 +39,16 @@ In Kiro CLI chat, invoke any prompt with `@prompt-name`:
 ```
 
 ## Prompts
+
+### commit-message
+
+Generate a commit message for staged changes.
+
+- **Input:** Auto-scans git staged changes
+- **Format:** Conventional Commits (feat/fix/docs/style/refactor/test/chore)
+- **Output:** One-line summary (max 72 chars), optional body for complex changes
+
+---
 
 ### code-review
 
@@ -144,6 +154,7 @@ Refresh foundational steering documents and docs.
 
 | Prompt | Input | Description |
 |--------|-------|-------------|
+| `commit-message` | Auto: staged changes | Generate conventional commit message |
 | `code-review` | Auto: staged changes | Review for correctness, security, reliability, readability |
 | `mock-testing` | Code input | Generate test plan with mocks/stubs |
 | `daily-next-step` | Auto: specs + TODO.md | Status summary and next actions |
