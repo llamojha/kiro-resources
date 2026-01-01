@@ -167,6 +167,16 @@ Refresh foundational steering documents and docs.
 | `seo-meta-sitemap-robots` | Auto or URL input | SEO and crawler assets |
 | `refresh-foundational-steering-and-docs` | Auto: steering + docs | Refresh steering docs |
 
+## Agents
+
+### rubberduck
+
+A thinking partner for debugging and brainstorming using the Rubberduck method.
+
+- **Usage:** Switch to agent with `/agent rubberduck`
+- **Capabilities:** Asks clarifying questions, helps break down problems, guides you to solutions through conversation
+- **Tools:** Read-only file access (can explore your codebase but won't make changes)
+
 ## Contributing
 
 Contributions welcome! Feel free to:
