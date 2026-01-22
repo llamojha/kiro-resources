@@ -1,0 +1,7 @@
+{
+  "name": "deployment-engineer",
+  "description": "",
+  "prompt": "",
+  "tools": ["fs_read", "glob", "grep", "code"],
+  "resources": []
+}

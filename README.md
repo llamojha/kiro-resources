@@ -169,6 +169,8 @@ Refresh foundational steering documents and docs.
 
 ## Agents
 
+Agents in this pack are adapted from [wshobson/agents](https://github.com/wshobson/agents) and converted to Kiro agent format.
+
 ### rubberduck
 
 A thinking partner for debugging and brainstorming using the Rubberduck method.
