@@ -1,6 +1,6 @@
 # Kiro Prompt Pack
 
-A collection of 12 reusable prompts for the [Kiro CLI](https://kiro.dev/cli/).
+A collection of 12 reusable prompts and 247 agents for the [Kiro CLI](https://kiro.dev/cli/).
 
 ## Installation
 
@@ -169,15 +169,349 @@ Refresh foundational steering documents and docs.
 
 ## Agents
 
-Agents in this pack are adapted from [wshobson/agents](https://github.com/wshobson/agents) and converted to Kiro agent format.
+247 agents converted to Kiro format. Switch agents with `/agent <name>`.
 
-### rubberduck
+### Sources
 
-A thinking partner for debugging and brainstorming using the Rubberduck method.
+| Source | Count | Description |
+|--------|-------|-------------|
+| [wshobson/agents](https://github.com/wshobson/agents) | 109 | Architecture, languages, DevOps, security, AI/ML, docs |
+| [0xfurai/claude-code-subagents](https://github.com/0xfurai/claude-code-subagents) | 137 | Framework and technology experts |
+| Custom | 1 | rubberduck |
 
-- **Usage:** Switch to agent with `/agent rubberduck`
-- **Capabilities:** Asks clarifying questions, helps break down problems, guides you to solutions through conversation
-- **Tools:** Read-only file access (can explore your codebase but won't make changes)
+### Agent List
+
+<details>
+<summary>Architecture & Design (15)</summary>
+
+- `architect-review` - Architectural consistency review
+- `backend-architect` - API design, microservices, database schemas
+- `c4-code` - C4 code-level diagrams
+- `c4-component` - C4 component diagrams
+- `c4-container` - C4 container diagrams
+- `c4-context` - C4 context diagrams
+- `cloud-architect` - AWS/Azure/GCP infrastructure
+- `database-architect` - Schema design, technology selection
+- `design-system-architect` - Design system architecture
+- `dotnet-architect` - .NET architecture
+- `event-sourcing-architect` - Event sourcing patterns
+- `graphql-architect` - GraphQL API design
+- `hybrid-cloud-architect` - Multi-cloud architecture
+- `kubernetes-architect` - Kubernetes architecture
+- `monorepo-architect` - Monorepo structure
+
+</details>
+
+<details>
+<summary>Languages (47)</summary>
+
+- `bash-expert`, `bash-pro` - Bash scripting
+- `c-expert`, `c-pro` - C programming
+- `clojure-expert` - Clojure
+- `cpp-expert`, `cpp-pro` - C++
+- `csharp-expert`, `csharp-pro` - C#
+- `dart-expert` - Dart
+- `elixir-expert`, `elixir-pro` - Elixir
+- `erlang-expert` - Erlang
+- `go-expert`, `golang-pro` - Go
+- `haskell-expert`, `haskell-pro` - Haskell
+- `java-expert`, `java-pro` - Java
+- `javascript-expert`, `javascript-pro` - JavaScript
+- `julia-pro` - Julia
+- `kotlin-expert` - Kotlin
+- `lua-expert` - Lua
+- `ocaml-expert` - OCaml
+- `perl-expert` - Perl
+- `php-expert`, `php-pro` - PHP
+- `posix-shell-pro` - POSIX shell
+- `python-expert`, `python-pro` - Python
+- `ruby-expert`, `ruby-pro` - Ruby
+- `rust-expert`, `rust-pro` - Rust
+- `scala-expert`, `scala-pro` - Scala
+- `sql-expert`, `sql-pro` - SQL
+- `swift-expert` - Swift
+- `typescript-expert`, `typescript-pro` - TypeScript
+
+</details>
+
+<details>
+<summary>Web Frameworks (32)</summary>
+
+- `actix-expert` - Actix (Rust)
+- `angular-expert`, `angularjs-expert` - Angular
+- `aspnet-core-expert` - ASP.NET Core
+- `astro-expert` - Astro
+- `django-expert`, `django-pro` - Django
+- `express-expert` - Express.js
+- `fastapi-expert`, `fastapi-pro` - FastAPI
+- `fastify-expert` - Fastify
+- `fiber-expert` - Fiber (Go)
+- `flask-expert` - Flask
+- `gin-expert` - Gin (Go)
+- `laravel-expert` - Laravel
+- `nestjs-expert` - NestJS
+- `nextjs-expert` - Next.js
+- `phoenix-expert` - Phoenix (Elixir)
+- `rails-expert` - Ruby on Rails
+- `react-expert` - React
+- `remix-expert` - Remix
+- `solidjs-expert` - SolidJS
+- `spring-boot-expert` - Spring Boot
+- `svelte-expert` - Svelte
+- `vue-expert` - Vue.js
+
+</details>
+
+<details>
+<summary>Mobile & Desktop (13)</summary>
+
+- `android-expert` - Android
+- `electron-expert` - Electron
+- `expo-expert` - Expo
+- `flutter-expert` - Flutter
+- `ios-developer`, `ios-expert` - iOS
+- `mobile-developer` - Mobile development
+- `mobile-security-coder` - Mobile security
+- `react-native-expert` - React Native
+- `swiftui-expert` - SwiftUI
+- `tauri-expert` - Tauri
+- `unity-developer` - Unity
+
+</details>
+
+<details>
+<summary>Databases (22)</summary>
+
+- `cassandra-expert` - Cassandra
+- `cockroachdb-expert` - CockroachDB
+- `database-admin` - Database administration
+- `database-optimizer` - Query optimization
+- `dynamodb-expert` - DynamoDB
+- `elasticsearch-expert` - Elasticsearch
+- `knex-expert` - Knex.js
+- `mariadb-expert` - MariaDB
+- `mongodb-expert` - MongoDB
+- `mongoose-expert` - Mongoose
+- `mssql-expert` - MS SQL Server
+- `mysql-expert` - MySQL
+- `neo4j-expert` - Neo4j
+- `opensearch-expert` - OpenSearch
+- `postgres-expert` - PostgreSQL
+- `prisma-expert` - Prisma
+- `redis-expert` - Redis
+- `sequelize-expert` - Sequelize
+- `sqlite-expert` - SQLite
+- `typeorm-expert` - TypeORM
+- `vector-database-engineer`, `vector-db-expert` - Vector databases
+
+</details>
+
+<details>
+<summary>DevOps & Infrastructure (24)</summary>
+
+- `ansible-expert` - Ansible
+- `circleci-expert` - CircleCI
+- `deployment-engineer` - Deployment
+- `devops-troubleshooter` - DevOps troubleshooting
+- `docker-expert` - Docker
+- `flyway-expert` - Flyway migrations
+- `github-actions-expert` - GitHub Actions
+- `gitlab-ci-expert` - GitLab CI
+- `jenkins-expert` - Jenkins
+- `kubernetes-expert` - Kubernetes
+- `liquibase-expert` - Liquibase
+- `pulumi-expert` - Pulumi
+- `service-mesh-expert` - Service mesh
+- `terraform-expert`, `terraform-specialist` - Terraform
+
+</details>
+
+<details>
+<summary>Observability (8)</summary>
+
+- `elk-expert` - ELK Stack
+- `grafana-expert` - Grafana
+- `loki-expert` - Loki
+- `observability-engineer` - Observability
+- `opentelemetry-expert` - OpenTelemetry
+- `prometheus-expert` - Prometheus
+
+</details>
+
+<details>
+<summary>Messaging & Queues (10)</summary>
+
+- `bullmq-expert` - BullMQ
+- `celery-expert` - Celery
+- `kafka-expert` - Kafka
+- `mqtt-expert` - MQTT
+- `nats-expert` - NATS
+- `rabbitmq-expert` - RabbitMQ
+- `sidekiq-expert` - Sidekiq
+- `sns-expert` - AWS SNS
+- `sqs-expert` - AWS SQS
+
+</details>
+
+<details>
+<summary>APIs & Protocols (10)</summary>
+
+- `graphql-expert` - GraphQL
+- `grpc-expert` - gRPC
+- `openapi-expert` - OpenAPI
+- `rest-expert` - REST APIs
+- `trpc-expert` - tRPC
+- `websocket-expert` - WebSocket
+
+</details>
+
+<details>
+<summary>Auth & Security (12)</summary>
+
+- `auth0-expert` - Auth0
+- `backend-security-coder` - Backend security
+- `frontend-security-coder` - Frontend security
+- `jwt-expert` - JWT
+- `keycloak-expert` - Keycloak
+- `oauth-oidc-expert` - OAuth/OIDC
+- `owasp-top10-expert` - OWASP Top 10
+- `security-auditor` - Security auditing
+- `threat-modeling-expert` - Threat modeling
+
+</details>
+
+<details>
+<summary>AI & ML (10)</summary>
+
+- `ai-engineer` - AI engineering
+- `data-scientist` - Data science
+- `langchain-expert` - LangChain
+- `ml-engineer` - ML engineering
+- `mlops-engineer` - MLOps
+- `numpy-expert` - NumPy
+- `openai-api-expert` - OpenAI API
+- `pandas-expert` - Pandas
+- `pytorch-expert` - PyTorch
+- `scikit-learn-expert` - scikit-learn
+- `tensorflow-expert` - TensorFlow
+
+</details>
+
+<details>
+<summary>Testing (14)</summary>
+
+- `ava-expert` - AVA
+- `cypress-expert` - Cypress
+- `jasmine-expert` - Jasmine
+- `jest-expert` - Jest
+- `mocha-expert` - Mocha
+- `playwright-expert` - Playwright
+- `puppeteer-expert` - Puppeteer
+- `selenium-expert` - Selenium
+- `tdd-orchestrator` - TDD orchestration
+- `test-automator` - Test automation
+- `testcafe-expert` - TestCafe
+- `vitest-expert` - Vitest
+
+</details>
+
+<details>
+<summary>Payments (3)</summary>
+
+- `braintree-expert` - Braintree
+- `payment-integration` - Payment integration
+- `stripe-expert` - Stripe
+
+</details>
+
+<details>
+<summary>Frontend & UI (10)</summary>
+
+- `accessibility-expert` - Accessibility
+- `css-expert` - CSS
+- `frontend-developer` - Frontend development
+- `html-expert` - HTML
+- `jquery-expert` - jQuery
+- `tailwind-expert` - Tailwind CSS
+- `ui-designer` - UI design
+- `ui-ux-designer` - UI/UX design
+- `ui-visual-validator` - Visual validation
+- `webpack-expert`, `rollup-expert` - Bundlers
+
+</details>
+
+<details>
+<summary>Build Tools & Runtimes (4)</summary>
+
+- `bun-expert` - Bun
+- `deno-expert` - Deno
+- `nodejs-expert` - Node.js
+
+</details>
+
+<details>
+<summary>Documentation (5)</summary>
+
+- `api-documenter` - API documentation
+- `docs-architect` - Documentation architecture
+- `mermaid-expert` - Mermaid diagrams
+- `reference-builder` - Reference docs
+- `tutorial-engineer` - Tutorials
+
+</details>
+
+<details>
+<summary>Code Quality & Review (7)</summary>
+
+- `code-reviewer` - Code review
+- `conductor-validator` - Validation
+- `context-manager` - Context management
+- `debugger` - Debugging
+- `error-detective` - Error analysis
+- `legacy-modernizer` - Legacy code modernization
+- `performance-engineer` - Performance optimization
+
+</details>
+
+<details>
+<summary>SEO (10)</summary>
+
+- `seo-authority-builder` - Authority building
+- `seo-cannibalization-detector` - Cannibalization detection
+- `seo-content-auditor` - Content auditing
+- `seo-content-planner` - Content planning
+- `seo-content-refresher` - Content refresh
+- `seo-content-writer` - SEO writing
+- `seo-keyword-strategist` - Keyword strategy
+- `seo-meta-optimizer` - Meta optimization
+- `seo-snippet-hunter` - Featured snippets
+- `seo-structure-architect` - Site structure
+
+</details>
+
+<details>
+<summary>Business & Other (15)</summary>
+
+- `business-analyst` - Business analysis
+- `content-marketer` - Content marketing
+- `customer-support` - Customer support
+- `dx-optimizer` - Developer experience
+- `firmware-analyst` - Firmware analysis
+- `hr-pro` - HR
+- `incident-responder` - Incident response
+- `legal-advisor` - Legal advice
+- `malware-analyst` - Malware analysis
+- `network-engineer` - Network engineering
+- `prompt-engineer`, `prompter` - Prompt engineering
+- `quant-analyst` - Quantitative analysis
+- `reverse-engineer` - Reverse engineering
+- `risk-manager` - Risk management
+- `rubberduck` - Rubber duck debugging
+- `sales-automator` - Sales automation
+- `search-specialist` - Search
+- `startup-analyst` - Startup analysis
+
+</details>
 
 ## Contributing
 
