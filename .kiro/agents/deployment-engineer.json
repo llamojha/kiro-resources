@@ -2,6 +2,11 @@
   "name": "deployment-engineer",
   "description": "",
   "prompt": "",
-  "tools": ["fs_read", "glob", "grep", "code"],
+  "tools": [
+    "read",
+    "glob",
+    "grep",
+    "write"
+  ],
   "resources": []
 }

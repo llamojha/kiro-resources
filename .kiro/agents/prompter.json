@@ -7,7 +7,6 @@
     "*"
   ],
   "toolAliases": {},
-  "allowedTools": [],
   "resources": [
     "file://AGENTS.md",
     "file://README.md"
