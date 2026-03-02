@@ -1,6 +1,6 @@
 # Kiro Prompt Pack
 
-A collection of 12 reusable prompts and 247 agents for the [Kiro CLI](https://kiro.dev/cli/).
+A collection of 15 reusable prompts and 256 agents for the [Kiro CLI](https://kiro.dev/cli/).
 
 ## Installation
 
@@ -150,6 +150,36 @@ Refresh foundational steering documents and docs.
 - **Input:** Auto-scans `.kiro/steering/`, `docs/`, and `README.md`
 - **Output:** Audit of outdated guidance, revised structure, updated conventions, PR checklist
 
+---
+
+### council-plan
+
+Model Council for planning — dispatches the same goal to 3 models (Opus, Sonnet, Haiku) in parallel, then synthesizes a unified plan.
+
+- **Input:** Describe your planning goal
+- **Models:** Claude Opus 4.5, Claude Sonnet 4.5, Claude Haiku 4.5
+- **Output:** Consensus, divergence analysis, unified implementation plan, model behavior notes
+
+---
+
+### council-architecture
+
+Model Council for architecture — dispatches the same question to 3 models (Opus, Sonnet, Haiku) in parallel, then synthesizes a unified architecture proposal.
+
+- **Input:** Describe your architecture question or system to design
+- **Models:** Claude Opus 4.5, Claude Sonnet 4.5, Claude Haiku 4.5
+- **Output:** Consensus, divergence analysis, unified architecture with components and decisions
+
+---
+
+### council-decision
+
+Model Council for decisions — dispatches the same dilemma to 3 models (Opus, Sonnet, Haiku) in parallel, then synthesizes a recommendation.
+
+- **Input:** Describe your decision or dilemma
+- **Models:** Claude Opus 4.5, Claude Sonnet 4.5, Claude Haiku 4.5
+- **Output:** Consensus, divergence analysis, unified recommendation with reversibility assessment
+
 ## Quick Reference
 
 | Prompt | Input | Description |
@@ -166,6 +196,9 @@ Refresh foundational steering documents and docs.
 | `codebase-search` | Describe target | Search targets and execution plan |
 | `seo-meta-sitemap-robots` | Auto or URL input | SEO and crawler assets |
 | `refresh-foundational-steering-and-docs` | Auto: steering + docs | Refresh steering docs |
+| `council-plan` | Describe goal | Model Council: 3 models plan in parallel, synthesized |
+| `council-architecture` | Describe system | Model Council: 3 models architect in parallel, synthesized |
+| `council-decision` | Describe dilemma | Model Council: 3 models decide in parallel, synthesized |
 
 ## Agents
 
@@ -177,7 +210,7 @@ Refresh foundational steering documents and docs.
 |--------|-------|-------------|
 | [wshobson/agents](https://github.com/wshobson/agents) | 109 | Architecture, languages, DevOps, security, AI/ML, docs |
 | [0xfurai/claude-code-subagents](https://github.com/0xfurai/claude-code-subagents) | 137 | Framework and technology experts |
-| Custom | 1 | rubberduck |
+| Custom | 10 | rubberduck, council-planner/architect/decision-opus/sonnet/haiku |
 
 ### Agent List
 
